@@ -1,0 +1,56 @@
+html
+    head
+        title Customer Care
+        <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap" rel="stylesheet">
+        style
+            include ../static/contactpagestyle.css
+    body
+        nav#navbar  
+            ul 
+                div#logo
+                    img(src='./pubglogo1.png',id="logoImage", alt="Pubg")   
+                li #[a(href="/News") News]
+                div.dropdown
+                    button.dropbtn Community
+                    div.dropdowncontent
+                        a(href="https://www.instagram.com/pubg/?hl=en") Instagram
+                        a(href="https://www.facebook.com/PUBGMOBILE.IN.OFFICIAL/?brand_redir=908555025972310") Facebook
+                        a(href="https://twitter.com/pubgmobile") Twitter
+                        a(href="https://discord.com/invite/pubgm") Discord
+                        a(href="https://www.youtube.com/PUBGMOBILE") YouTube
+                li #[a(href="/DeveloperContact") Developer Contact]
+                li #[a(href="/About") About]
+                li #[a(href="https://pubgmobile.helpshift.com/a/pubg-mobile/") Support]
+                li #[a#login(href="/Login") Login]
+        section#email
+            div.emailnote1
+                h1 E-Mail
+            div.emailimage
+                img(src="./email.png", alt="", srcset="")
+            div.emailnote2
+                |You can easily contact us through our E-mail
+            div.emailnote3
+                |PUBGMOBILE_CS@tencentgames.com
+        section#Ingamecare
+            div.numbernote1
+                h1 In-game Customer care
+            div.numberimage
+                img(src="./customercare.jpg", alt="Customer Care ", srcset="")
+            div.numbernote2
+                |You can easily contact us through our In-game Customer Care Service
+        section#customercare
+            div.ccnote1
+                h1 Customer Care
+            div.ccimage
+                img(src="./callcenter.jpg", alt="", srcset="")
+            div.ccnote2
+                |You can easily contact us through our 24X7 Customer Care
+        section#end
+            div#copyrightinfo
+                |PUBG Corporation
+                |A Krafton Game Union
+            div
+                |COPYRIGHT ©2020 PUBG CORPORATION. ALL RIGHTS RESERVED.
+            div
+                |PLAYERUNKNOWN’S BATTLEGROUNDS and PUBG are registered trademarks, trademarks or
+                |service marks of PUBG CORPORATION.

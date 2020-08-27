@@ -1,0 +1,55 @@
+html
+    head
+        title News
+        <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap" rel="stylesheet"> 
+        style
+            include ../static/Newspagestyle.css
+    body
+        nav#navbar  
+            ul 
+                div#logo
+                    img(src='./pubglogo1.png',id="logoImage", alt="Pubg")   
+                li #[a(href="/News")#News News]
+                div.dropdown
+                    button.dropbtn Community
+                        i.fafa-caret-down
+                    div.dropdowncontent
+                        a(href="https://www.instagram.com/pubg/?hl=en") Instagram
+                        a(href="https://www.facebook.com/PUBGMOBILE.IN.OFFICIAL/?brand_redir=908555025972310") Facebook
+                        a(href="https://twitter.com/pubgmobile") Twitter
+                        a(href="https://discord.com/invite/pubgm") Discord
+                        a(href="https://www.youtube.com/PUBGMOBILE") YouTube
+                li #[a(href="/DeveloperContact") Developer Contact]
+                li #[a(href="/About") About]
+                li #[a(href="/support") Support]
+                li #[a#login(href="/Login") Login]
+        section#news1
+            div.news1image
+                img(src="./patch1.jpg", alt="", srcset="")
+            div.news1
+                |Season 14 Update is here with more Exciting features
+            div.news11
+                |Update live from 14 july, Update to enjoy new Features
+        section#news2
+            div.news2image
+                img(src="./ancient.jpg", alt="", srcset="")
+            div.news2
+                |Discover the Ancient Secret 
+            div.news22
+                |Coming Live up with the Golden Pharaoh Suit-X
+        section#news3
+            div.news3image
+                img(src="./Pharaoh.jpg", alt="", srcset="")
+            div.news3
+                |Discover the 6-Star Upgradable Pharaoh Suit 
+            div.news33
+                |Upgrade the pharaoh suit to get Exclusive Emotes
+        section#news4
+            div.news4image
+                img(src="./season13.jpg", alt="", srcset="")
+            div.news4
+                |Season 13 Toy Playground is live 
+            div.news44
+                |Update live on 12th May,Update to Enjoy the toy Playground
+
+

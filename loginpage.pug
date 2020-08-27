@@ -1,0 +1,28 @@
+html
+    head
+        title Login Portal
+        <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap" rel="stylesheet">
+        style
+            include ../static/loginpagestyle.css
+        script
+            include ../static/loginpagescript.js
+    body
+        div.container
+            h2 Login
+            form(action="/Login" method="post" id="login form")
+                div.inputbox
+                    input(type="email" name="email" placeholder="Username")
+                div.inputbox
+                    input(type="Password" name="password" placeholder="Password" id="userpassword")
+                    img(src="./eye.jpg", alt="",id="Eyeimage",onclick="Imagechange()") 
+                div.checkbox
+                    input(type="checkbox" id="EmailRemember" name="Emailremember" value="emailremember")
+                    label(for="EmailRemember")#EmailRemember  Remember Email
+                div.forgotpassword
+                    a(href="/passwordrecover")#forgotpassword forgot password?
+                div.loginbutton
+                    button#loginbutton Login
+            div.heading
+                 h3 DON'T HAVE AN ACCOUNT?
+            div.createaccount
+                a(href="/createaccount")#createaccount CREATE AN ACCOUNT

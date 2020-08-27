@@ -1,0 +1,23 @@
+html
+    head
+        title Create Account
+        <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap" rel="stylesheet"> 
+        style
+            include ../static/newaccountpagestyle.css
+    body
+        div.newcontainer
+            div.guestheading
+                h1 Welcome user
+            form(action='/createaccount' method='post' id="newaccount")
+                input(type="email" name="email" placeholder="EMAIL ADDRESS" id="email")
+                input(type="password" name="password" placeholder="PASSWORD" id="password")
+                input(type="password" name="confirmedpassword" placeholder="CONFIRM PASSWORD" id="cpassword")
+                input(type="text" name="username" placeholder="USERNAME" id="username")
+                div.DOB
+                    h3 DATE OF BIRTH
+                    input(type="date" name="DOB" placeholder="DATE OF BIRTH" id="DOB" )
+                div.checkbox
+                    input(type="checkbox", name="t&c",id="TC")
+                    label(for="T&C") I have Read the terms and Conditions.
+                div.submitbutton
+                    button#submit Create Account

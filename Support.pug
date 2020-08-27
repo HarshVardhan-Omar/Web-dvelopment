@@ -1,0 +1,25 @@
+html
+    head
+        title Support
+        <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap" rel="stylesheet"> 
+        style
+            include ../static/supportpagestyle.css
+    body
+        nav#navbar  
+            ul 
+                div#logo
+                    img(src='./pubglogo1.png',id="logoImage", alt="Pubg")   
+                li #[a(href="/News") News]
+                div.dropdown
+                    button.dropbtn Community
+                    div.dropdowncontent
+                        a(href="https://www.instagram.com/pubg/?hl=en") Instagram
+                        a(href="https://www.facebook.com/PUBGMOBILE.IN.OFFICIAL/?brand_redir=908555025972310") Facebook
+                        a(href="https://twitter.com/pubgmobile") Twitter
+                        a(href="https://discord.com/invite/pubgm") Discord
+                        a(href="https://www.youtube.com/PUBGMOBILE") YouTube
+                li #[a(href="/DeveloperContact") Developer Contact]
+                li #[a(href="/About") About]
+                li #[a(href="/support")#support Support]
+                li #[a#login(href="/Login") Login]
+                

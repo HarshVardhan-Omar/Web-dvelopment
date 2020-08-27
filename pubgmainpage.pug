@@ -1,0 +1,56 @@
+html
+    head
+        title Pubg
+        <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap" rel="stylesheet"> 
+        style
+            include ../static/mainpagestyle.css
+    body
+        nav#navbar  
+            ul 
+                div#logo
+                    img(src='./pubglogo1.png',id="logoImage", alt="Pubg")   
+                li #[a(href="/News") News]
+                div.dropdown
+                    button.dropbtn Community
+                    div.dropdowncontent
+                        a(href="https://www.instagram.com/pubg/?hl=en") Instagram
+                        a(href="https://www.facebook.com/PUBGMOBILE.IN.OFFICIAL/?brand_redir=908555025972310") Facebook
+                        a(href="https://twitter.com/pubgmobile") Twitter
+                        a(href="https://discord.com/invite/pubgm") Discord
+                        a(href="https://www.youtube.com/PUBGMOBILE") YouTube
+                li #[a(href="/DeveloperContact") Developer Contact]
+                li #[a(href="/About") About]
+                li #[a(href="https://pubgmobile.helpshift.com/a/pubg-mobile/") Support]
+                li #[a#login(href="/Login") Login]
+                
+        section#introsection
+        section#box1
+        section#box2
+        section#miscellaneous
+            div#heading
+                h1 Patch Notes
+            section#patch1
+                div#patchImage
+                    img(src='./patch1.jpg',id="PatchImage" alt="Season 14 theme")
+                div#patchnotes
+                    h2 Update 0.19.0
+                    | The 0.19.0 Update is here with more exciting
+                    | firearms, new game modes and much more
+                div#knowMore
+                    a(href="/knowmore")#knowmore Read more
+        section#footer
+            div#headingfooter
+                h1#footerheading Play today on supported devices
+            div#linksupported
+                a(href="/Supporteddevices")#devices View Supported Devices
+        section#end
+            div#copyrightinfo
+                |PUBG Corporation
+                |A Krafton Game Union
+            div
+                |COPYRIGHT ©2020 PUBG CORPORATION. ALL RIGHTS RESERVED.
+            div
+                |PLAYERUNKNOWN’S BATTLEGROUNDS and PUBG are registered trademarks, trademarks or
+                |service marks of PUBG CORPORATION.    
+        
+            
